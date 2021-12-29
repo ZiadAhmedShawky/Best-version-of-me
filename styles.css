@@ -4,15 +4,15 @@ font-family: 'Poppins', sans-serif;
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 header
 {
 background-color: #f0f0f0;
 width: 100%;
 position: fixed;
-z-index: 1000;
 display: flex;
+z-index: 1000;
 justify-content: space-between;
 align-items:center;
 padding: 10px 200px;
@@ -92,10 +92,15 @@ transition: 0.9s ease;
 }
 .social-icons a{
   color: white;
+  display: inline-block;
   font-size: 1.7em;
   padding-left: 30px;
-
+  transition: 0.5s ease;
 }
+.social-icons a:hover{
+  transform: scale(1.1);
+}
+
 .title
 {
   color: #4e9eff;
@@ -107,8 +112,8 @@ transition: 0.9s ease;
 }
 .content
 {
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -172,25 +177,63 @@ transition: 0.9s ease;
   font-weight:700;
   margin: 10px;
 }
-.projects{
-  background-color:#000016;
-}
-.projects .contect
+.contact
 {
-  margin-top: 30px;
+  background-color:#000016	;
 }
-.project-card
+.contact .title
 {
   color:#fff;
-  border: 1px solid #fff;
-  min-height: 10em;
-  width: 13em;
-  border-radius: 10px;
-  margin: 20px;
-  overflow: hidden;
-  transition: 0.7s ease;
 }
-.project-images img
+.contact .content
 {
-  width: 100%;
+
+  margin-top: 15px;
+}
+.contact .content .card
+{
+  padding:40px;
+  background-color:#fff	;
+
+}
+.contact .content .card .icon1
+{
+  font-size: 4.5em;
+  color: royalblue;
+}
+.contact .content .card .icon2
+{
+  font-size: 4.5em;
+  color: royalblue;
+}
+.contact .info h3
+{
+  color: black;
+}
+.contact .info p
+{
+
+  font-size: 1.2em;
+}
+.footer
+{
+  padding: 30px;
+  background-color:#fff;
+  color:black;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .social-icons a
+{
+  color:steelblue;
+}
+.footertitle
+{
+  font-size: 1.4em;
+  font-weight: 500;
+
+}
+.footertitle span
+{
+  color:royalblue;
 }
